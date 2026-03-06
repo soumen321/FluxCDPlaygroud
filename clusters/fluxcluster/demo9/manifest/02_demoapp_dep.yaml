@@ -16,5 +16,5 @@ spec:
         app: demoapp
     spec:
       containers:
-      - image: yogeshraheja/fluxdemo:1.0.0 # {"$imagepolicy": "flux-system:demo9-image-policy"}
+      - image: yogeshraheja/fluxdemo:1.1.0 # {"$imagepolicy": "flux-system:demo9-image-policy"}
         name: demoapp
