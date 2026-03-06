@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: demoapp
+  name: demoapp-dep
+  namespace: demo9-ns
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: demoapp
+  template:
+    metadata:
+      labels:
+        app: demoapp
+    spec:
+      containers:
+      - image: yogeshraheja/fluxdemo:1.1.0 # {"$imagepolicy": "flux-system:demo9-image-policy"}
+        name: demoapp
