@@ -226,8 +226,8 @@ kubectl get ns
 ```powershell
 # Create secret with AWS credentials
 kubectl create secret generic s3-secret \
-    --from-literal=accesskey=AKIAW6232UDFIX2B2NPW \
-    --from-literal=secretkey=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 \
+    --from-literal=accesskey=<> \
+    --from-literal=secretkey=<> \
     -n flux-system
 ```
 
